@@ -1,0 +1,27 @@
+{
+  "name": "node-js-",
+  "version": "1.0.0",
+  "description": "api proyecto nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OdalisMG/Node-JS-.git"
+  },
+  "author": "Odalis Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OdalisMG/Node-JS-/issues"
+  },
+  "homepage": "https://github.com/OdalisMG/Node-JS-#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "moongose": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
