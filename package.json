@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/OdalisMG/Node-JS-#readme",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "express": "^4.19.2",
     "mongoose": "^8.3.4"
   },
