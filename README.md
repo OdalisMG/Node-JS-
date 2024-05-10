@@ -3,6 +3,7 @@ Correo Electronico: Godalis64@gmail.com
 Nombre: Odalis Magdalena Garcia Pincay
 
 Rubrica de proyecto
+
 Para el desarrollo del proyecto final, será necesario la aplicación de los
 conceptos visto en clases y videos sobre:
 
