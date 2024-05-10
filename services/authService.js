@@ -1,8 +1,7 @@
-const jwt =require('jsonwebtoken');
+const jwt = require ('jsonwebtoken');
 
 
-const JWT_SECRET =
-"MIICWwIBAAKBgQCcqIrdeNxc+R25ao1ekl2P0iS6+Byg9lAvLGSiJc1wskw2Je3Q";
+const JWT_SECRET = "MIICWwIBAAKBgQCcqIrdeNxc+R25ao1ekl2P0iS6+Byg9lAvLGSiJc1wskw2Je3Q";
 
 
 function generateToken(user){
@@ -11,7 +10,7 @@ function generateToken(user){
         email: user.email,
     };
     
-    const token = jwt.sign(payload, JWT_SECRET,{expiresIn:"4h"});
+    const token = jwt.sign(payload, JWT_SECRET,{expiresIn:"2h"});
     return token;
 }
 

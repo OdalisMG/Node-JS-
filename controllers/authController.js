@@ -10,14 +10,14 @@ function login(req,res){
     User.findOne({email})
     .then((user)=>{
             if(!user) { 
-                res.status(400).json({message: "Usuario no encontrado - accesos invalidos  "});
+                res.status(401).json({message: "Usuario no encontrado - accesos invalidos  "});
     }
     
     bcryptService
     .comparePassword(contraseña, user.contraseña)
     .then((match)=>{
         if(!match){
-            return res.status(404).json({message: "Accesos invalidos"});
+            return res.status(401).json({message: "Accesos invalidos"});
         }
     
         const token = authService.generateToken(user);

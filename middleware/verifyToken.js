@@ -6,17 +6,17 @@ function verifyToken(req, res, next){
 
     if (!token) {
         reject({
-            status:401,
+            status:400,
             message: 'Token de autenticacion no proporcionado'
         });
     }
 
     jwt.verify(
         token.split(" ")[1],
-    "899e234041186352d65a212160eb1737b7e797d2250b80b232dfebc098edf278",
+    "MIICWwIBAAKBgQCcqIrdeNxc+R25ao1ekl2P0iS6+Byg9lAvLGSiJc1wskw2Je3Q",
     (error,decodedToken)=>{
         if(error){
-            reject({status:401, message: 'Token de autenticacion no valido'})
+            reject({status:400, message: 'Token de autenticacion no valido'})
         }else{
             req.userId = decodedToken.userId
             resolve()

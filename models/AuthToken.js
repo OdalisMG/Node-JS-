@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require ('mongoose');
 
 const authTokenSchema = new mongoose.Schema({
     userId:{
@@ -13,7 +13,7 @@ const authTokenSchema = new mongoose.Schema({
     createdAt:{
         type: Date,
         default: Date.now,
-        expires: "4h"
+        expires: "2h"
     }
 });
 
